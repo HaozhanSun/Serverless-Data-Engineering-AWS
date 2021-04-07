@@ -12,5 +12,7 @@ Third, another Lambda ('consumer') consumes the data in SQS and send them to Ama
 
 Fourth, Amazon Comprehend outputs the processed results (company names that are originally in DynamoDB, and now with predicted sentiment) into S3 buckets.
 
+---
+
 In this way, we have built a machine learning pipeline that automatically grabs the data in DynamoDB database and does sentiment analysis, then outputs them into our desired storage.
 
